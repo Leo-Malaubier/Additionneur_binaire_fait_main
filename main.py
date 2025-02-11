@@ -10,11 +10,11 @@ class main:
     def run(self):
         while True:
             try:
-                task = input("donner moi quelque chose a faire: ")
+                task = input("donne-moi quelque chose à faire : ")
                 if task == "ADD" or task =="SUB" or task=="MULT":
-                    nb1 = input("donner moi un premier nombre bianire: ")
+                    nb1 = input("donne-moi un premier nombre binaire : ")
                     nb1=self.controller.verif(nb1)
-                    nb2= input("donner moi un second nombre bianire: ")
+                    nb2= input("donne-moi un second nombre binaire :")
                     nb2=self.controller.verif(nb2)
                     if task =="ADD":
                         print(self.calculateur.adder_8bit(nb1,nb2))
